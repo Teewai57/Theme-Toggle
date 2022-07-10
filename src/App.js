@@ -21,6 +21,12 @@ function App() {
       setTheme('light-mode');
     }
   };
+
+  useEffect(() => {
+    document.documentElement.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+  
   
   return <h2>dark mode starter</h2>
 }
