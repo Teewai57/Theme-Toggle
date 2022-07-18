@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import Form from './components/Form';
+import "./App.css";
+import { createContext } from 'react';
 
+
+export const ThemeContext = createContext(null);
 
 function App() {
-
   return (
-   <>
-   <h1>Welcome!</h1>
-   </>
+   <div className='App' id='light'>
+    <Form />
+   </div>
   );
 }
 
