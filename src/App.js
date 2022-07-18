@@ -7,9 +7,11 @@ export const ThemeContext = createContext(null);
 
 function App() {
   return (
-   <div className='App' id='light'>
-    <Form />
-   </div>
+    <ThemeContext.Provider>
+      <div className='App' id='light'>
+        <Form />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
